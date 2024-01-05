@@ -23,7 +23,7 @@ export default function Home() {
         <h1>Hello CSR </h1>
         <br />
         <ul>
-        {data.map((spx: any) => <li>{spx.mission_name}</li>)}
+        {data.map((spx: any, index: any) => <li key={index}>{spx.mission_name}</li>)}
         </ul>
       </div>
     </main>
